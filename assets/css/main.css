@@ -2,6 +2,21 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
 
 
+.zoomable {
+	transition: transform 0.3s ease;
+	cursor: pointer;
+  }
+  
+.zoomable:hover {
+	transform: scale(1.5);
+}
+
+@media (max-width: 768px) {
+	.zoomable:hover {
+		transform: none; /* Disable zoom effect on mobile */
+	}
+}
+
 .tech-icons {
 	display: flex;
 	gap: 30px;
